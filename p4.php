@@ -17,6 +17,7 @@ exit;
     <?php
 
      echo "phone no  ".$_POST["phone"];
+     $_SESSION['phn']=$_POST["phone"];
   ?>
 </body>
 </html>

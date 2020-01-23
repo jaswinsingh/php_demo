@@ -16,7 +16,6 @@ exit;
     <?php
     if (isset($_POST['upload']))
     {
-
       $file_name = $_FILES['file']['name'];
       $file_type = $_FILES['file']['type'];
       $file_size = $_FILES['file']['size'];

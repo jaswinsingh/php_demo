@@ -15,7 +15,7 @@ exit;
       <title></title>
     </head>
     <body>
-        <a id="logout" href="logout.php">logout</a>
+        <a class="link logout" href="logout.php">logout</a>
       <form name="form1" method="post" action="p1.php" class="form">
         First Name - <input id="fName" type="text" name="fName" value="" placeholder="First name" onkeyup="checkalpha(document.form1.fName),checkerror(document.getElementById('fname')) ;"required>
         <p id="fname" >*Only alphabet allowed</p>

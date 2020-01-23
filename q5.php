@@ -16,7 +16,7 @@ exit;
     <title></title>
   </head>
   <body>
-    <a id="logout" href="logout.php">logout</a>
+    <a class="link logout" href="logout.php">logout</a>
     <form name="form1" method="post" action="p5.php" class="form">
       <label>Enter valid Email Address</label>
       <input type="text" id="mail" name="email" value="" placeholder="Enter E-mail" onchange="checkmail(),checkerror(document.getElementById('Email'))">

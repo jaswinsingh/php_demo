@@ -15,7 +15,7 @@ exit;
     <title></title>
   </head>
   <body>
-      <a id="logout" href="logout.php">logout</a>
+      <a class="link logout" href="logout.php">logout</a>
     <form name="form1" method="post" action="p3.php" class="form">
       <label>Enter the marks in format, English|80. One subject in each line.  </label>
       <textarea class="textarea" name="comments" rows="8" cols="30"></textarea>

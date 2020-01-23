@@ -1,5 +1,12 @@
 *{
   font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.img{
+  height: 170px;
+  width: 150px;
+  margin: 20px 0;
 }
 .valid{
     border-color: green;
@@ -52,19 +59,43 @@ label{
   padding: 8px 16px;
   text-decoration: none;
 }
-
+  table, tr, td,th{
+   border: 2px solid black;
+   border-collapse: collapse;
+   padding: 5px;
+   margin:20px auto;
+   width: 50px:
+}
 /* Style the active/current link */
 .pagination a.active {
   background-color: dodgerblue;
   color: white;
 }
-#logout{
-  float: right;
+.link{
   text-decoration: none;
   display: block;
   padding: 10px 10px;
   background-color:orange;
+}
+.download{
+  width: 70px;
+  margin: 0 auto;
+}
+.logout{
+  float: right;
   margin-right: 20px;
 }
 /* Add a grey background color on mouse-over */
 .pagination a:hover:not(.active) {background-color: #ddd;}
+.content{
+  margin: 50px auto;
+  width: 400px;
+  box-shadow: 5px 5px 10px grey, -5px 5px 10px grey;
+  border-radius: 20px;
+}
+.conatiner{
+  width: 170px;
+  margin: 0 auto;
+}
+.container{width: 250px;
+margin: 0 auto;}

@@ -16,7 +16,7 @@ exit;
     <title></title>
   </head>
   <body>
-      <a id="logout" href="logout.php">logout</a>
+      <a class="link logout" href="logout.php">logout</a>
     <form name="form1" method="post" action="p4.php" class="form">
       <label>Enter Phone No. [+91xxxxxxxxxx]</label>
       <input type="text" id="pno" name="phone" value="" maxlength="13" placeholder="Enter Ph-no "onchange="CountryCode(),checkerror(document.getElementById('Ph-no'))">

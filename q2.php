@@ -14,7 +14,7 @@ exit;
     <title></title>
   </head>
   <body>
-      <a id="logout" href="logout.php">logout</a>
+      <a class="link logout" href="logout.php">logout</a>
     <form name="form1" method="post" action="p2.php" class="form" enctype="multipart/form-data">
       <label>Select an image to  upload</label>
       <input type="file" name="file" required>

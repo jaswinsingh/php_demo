@@ -16,7 +16,7 @@ exit;
 <?php
 
 
-   if (isset($_POST[upload]))
+   if (isset($_POST['upload']))
   {
     $access_key = '8a06741ebfab93a994bdcaa59eebc248';
 
@@ -35,6 +35,7 @@ exit;
     if (($validationResult['format_valid']) && ($validationResult['smtp_check']) && ($validationResult['score'])>0.5)
     {
       echo nl2br("\n Welcome ".$_POST["email"]);
+      $_SESSION['email']=$_POST["email"];
     }
     else
     {
