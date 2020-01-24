@@ -1,10 +1,4 @@
-<?php
-session_start();
-if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
-header("Location: login.php");
-exit;
-}
- ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -16,7 +10,7 @@ exit;
 <?php
 
 
-   if (isset($_POST['upload']))
+   if (isset($_POST['email']))
   {
     $access_key = '8a06741ebfab93a994bdcaa59eebc248';
 

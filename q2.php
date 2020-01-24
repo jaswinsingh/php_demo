@@ -1,9 +1,6 @@
 <?php
-session_start();
-if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
-header("Location: login.php");
-exit;
-}
+include 'session.php';
+
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -14,13 +11,21 @@ exit;
     <title></title>
   </head>
   <body>
-      <a class="link logout" href="logout.php">logout</a>
-    <form name="form1" method="post" action="p2.php" class="form" enctype="multipart/form-data">
+      <?php include 'heading.html'; ?>
+    <div class="formcontent">
+      <div class="form">
+      <form name="form1" method="post" action="" class="" enctype="multipart/form-data">
       <label>Select an image to  upload</label>
       <input type="file" name="file" required>
       <input type="submit" name="upload">
-
     </form>
+  </div>
+
+<div class="displayPHP">
+  <?php include 'p2.php'; ?>
+</div>
+</div>
+<div class="footer">
     <div class="pagination">
       <a href="q1.php">1</a>
       <a href="q2.php">2</a>
@@ -29,5 +34,6 @@ exit;
       <a href="q5.php">5</a>
       <a href="q6.php">6</a>
     </div>
+  </div>
   </body>
 </html>

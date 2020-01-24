@@ -1,21 +1,10 @@
-<?php
-session_start();
-if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
-header("Location: login.php");
-exit;
-}
- ?>
+
  <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <style media="screen">
     /* styling of content */
-      table, tr, td,th{
-        border: 2px solid black;
-         border-collapse: collapse;
-         padding: 5px;
-         margin:30px;
-      }
+  
 
     </style>
     <meta charset="utf-8">
@@ -25,7 +14,7 @@ exit;
     <?php
 
     // DISPLAY SUBJECT MARKS IN FORM OF TABLE
-    if ($_POST['comments']!="")
+    if (isset($_POST['comments'])&& $_POST['comments']!="")
     {
     $x=$_POST['comments'];
     $x=preg_replace('/[\r\n ]+$/', "", $x); //REGULAR EXPRESSION USED TO ELIMINATE LAST LINE BREAKS AND EXTRA SPACE

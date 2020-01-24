@@ -1,9 +1,5 @@
 <?php
-session_start();
-if (!isset($_SESSION["login"]) || $_SESSION["login"] != true) {
-header("Location: login.php");
-exit;
-}
+include 'session.php';
  ?>
   <!DOCTYPE html>
   <html lang="en" dir="ltr">
@@ -15,20 +11,24 @@ exit;
       <title></title>
     </head>
     <body>
-        <a class="link logout" href="logout.php">logout</a>
-      <form name="form1" method="post" action="p1.php" class="form">
-        First Name - <input id="fName" type="text" name="fName" value="" placeholder="First name" onkeyup="checkalpha(document.form1.fName),checkerror(document.getElementById('fname')) ;"required>
-        <p id="fname" >*Only alphabet allowed</p>
+      <?php include 'heading.html'; ?>
+      <div class="formcontent">
+        <div class="form">
+        <form name="form1" method="post" action="" class="">
+          First Name - <input id="fName" type="text" name="fName" value="" placeholder="First name" onkeyup="checkalpha(document.form1.fName),checkerror(document.getElementById('fname')) ;"required>
+          <p id="fname" >*Only alphabet allowed</p>
+          Last Name - <input id="lName" type="text" name="lName" value="" placeholder="Last name" onchange="concat();" onkeyup="checkalpha(document.form1.lName),checkerror(document.getElementById('lname'));"required>
+          <p id="lname">*Only alphabet allowed</p>
+          Full Name - <input  id="full" type="text" name="fullName" value="" disabled>
+          <input type="submit" name="submit" >
+        </form>
+        </div>
 
-        Last Name - <input id="lName" type="text" name="lName" value="" placeholder="Last name" onchange="concat();" onkeyup="checkalpha(document.form1.lName),checkerror(document.getElementById('lname'));"required>
-        <p id="lname">*Only alphabet allowed</p>
-
-        Full Name - <input  id="full" type="text" name="fullName" value="" disabled>
-
-
-        <input type="submit" name="submit" >
-
-      </form>
+      <div class="displayPHP">
+        <?php include 'p1.php'; ?>
+      </div>
+    </div>
+    <div class="footer">
     <div class="pagination">
       <a href="q1.php">1</a>
       <a href="q2.php">2</a>
@@ -37,6 +37,7 @@ exit;
       <a href="q5.php">5</a>
       <a href="q6.php">6</a>
     </div>
+  </div>
 
     </body>
   </html>
