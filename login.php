@@ -11,8 +11,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
         // Wrong login - message
         // else {echo "<h1>invalid details<h1>";}
 }
-
- ?>
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -22,12 +21,19 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
     <title></title>
   </head>
   <body>
-    <form class="form" action="" method="post">
+    <?php include 'heading.html'; ?>
+    <div class="logincontent">
+      <div class="login">
+
+    <form class="form loginform" action="" method="post">
       <label>Enter Username</label>
       <input type="text" name="username" value="" placeholder="USERNAME">
       <label>Enter Password</label>
       <input type="password" name="password" value="" placeholder="PASSWORD">
       <input type="submit" name="upload" value="Login">
     </form>
+
+  </div>
+  </div>
   </body>
 </html>

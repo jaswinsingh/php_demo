@@ -1,9 +1,5 @@
 <?php
-session_start();
-if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
-header("Location: login.php");
-exit;
-}
+include 'session.php';
 
 header("Content-type: application/vnd.ms-word");
 header("Content-Disposition: attachment;Filename=document_name.doc");
