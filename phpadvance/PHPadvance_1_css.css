@@ -18,25 +18,26 @@ h2{
 p{
   margin-top: 20px;
   font-weight: 300;
+  font-size: 15px;
 }
 ul {
   margin-top: 20px;
   margin-left: 30px;
-    font-weight: 300;
+  font-weight: 300;
+  font-size: 15px;
 }
 .image0 ,.image2,.image4 ,.image6{
     display: inline-block;          /* even images*/
     width: 35%;
-    height: 400px;
+    height: 370px;
     float: left;
-    margin-left: 100px;
+    margin-left:100px;
 }
 .image1 ,.image3,.image5 ,.image7{    /* odd images*/
     display: inline-block;
     width: 35%;
-    height: 400px;
+    height: 370px;
     margin-left: 50px;
-    
 }
 img{
   max-width: 100%;
@@ -56,4 +57,12 @@ img{
   float: left;
   /* margin: 82px 0; */
   margin-left: 100px;
+}
+.number{
+  background: orange;
+  color: white;
+  height: 100px;
+  width: 100px;
+  border-radius:50%;
+padding: 3px 10px;
 }
